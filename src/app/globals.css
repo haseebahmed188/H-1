@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Header*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: #fef3c7;
+  padding: 1.5rem;
+  border-bottom: 5px solid #facc15;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+/* Navigation List */
+nav ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: #facc15;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.icons span {
+  transition: transform 0.2s ease;
+}
+
+.icons span:hover {
+  transform: scale(1.1);
+}
+
+/* Hamburger Menu - Hidden by Default */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000;
+}
+
+/* Mobile Menu */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fef3c7;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+  border-bottom: 5px solid #facc15;
+  z-index: 100;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: block;
+  }
+
+ 
+  .icons {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+
+
+/* Footer */
+
+
+
+.footer {
+  background-color: #fff;
+  padding: 5rem;
+  text-align: center;
+  border-top: 2px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-item:center;
+}
+
+.footer-links ul,
+.footer-help ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a,
+.footer-help a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-newsletter input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.footer-newsletter button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+footer p {
+  margin-top: 1rem;
+  color: #666;
+}
+
+
+
